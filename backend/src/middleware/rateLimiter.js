@@ -15,8 +15,13 @@ const rateLimiter = async (req, res, next) => {
 
     } catch (error) {
         console.log("Rate limit error", error);
-        next(error);
-    }  
+        // Replace next(error) with a direct JSON response:
+        res.status(500).json({ 
+            success: false, 
+            message: "Rate limit check failed", 
+            error: error.message 
+        });
+    }
 };
 
 export default rateLimiter;
