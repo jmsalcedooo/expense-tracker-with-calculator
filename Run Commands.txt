@@ -1,0 +1,17 @@
+cd C:\Users\Admin\StudioProjects\Expense-Tracker-System\mobile
+npx expo
+
+
+cd C:\Users\Admin\StudioProjects\Expense-Tracker-System\backend
+npm run dev
+
+
+Websites Used:
+
+https://upstash.com
+
+https://console.neon.tech
+
+https://dashboard.render.com
+
+clerk.com
