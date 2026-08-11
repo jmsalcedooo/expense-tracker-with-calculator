@@ -20,7 +20,10 @@ import { ThemeProvider } from "../context/ThemeContext";
 
 export default function RootLayout() {
   return (
-    <ClerkProvider tokenCache={tokenCache}>
+    <ClerkProvider 
+      publishableKey="pk_test_Zmlyc3QtZG9kby02OC5jbGVyay5hY2NvdW50cy5kZXYk" 
+      tokenCache={tokenCache}
+    >
       <ThemeProvider>
         <SafeScreen>
           <Slot />
