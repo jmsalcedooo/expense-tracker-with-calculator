@@ -24,7 +24,6 @@ This project is built using React.js (React Native) and SQL, simulating a cross-
       <img src="https://github.com/user-attachments/assets/17cf41f3-8db2-4c98-bf04-f7724743b4ec" width="220" alt="Dark Mode" />
       <br><b>Dark Mode</b>
     </td>
-    <td></td>
   </tr>
 </table>
 
