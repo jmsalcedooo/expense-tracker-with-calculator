@@ -55,7 +55,7 @@ export default function Page() {
 
           <View style = {styles.headerLeft}>
             <Image
-              source={require("../../assets/images/logo.png")}
+              source={require("@/assets/images/logo.png")}
               style={styles.headerLogo}
               resizeMode="contain"
             /> 
