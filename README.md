@@ -34,7 +34,7 @@ This project is built using React.js (React Native) and SQL, simulating a cross-
 * **Transaction Management:** Easily add, view, and delete daily income and expenses.
 * **Financial Summary:** Real-time calculation of total balance, total income, and total expenses.
 * **Built-in Calculator:** Convenient access to a calculator without leaving the app.
-* **Theme Customization:** Toggle between intuitive visual themes (e.g., Dark Mode and Purple Mode).
+* **Theme Customization:** Toggle between intuitive visual themes (e.g., Dark Mode and Light Mode).
 * **Cross-Platform Compatibility:** Optimized for web, Android, and iOS using Expo.
 
 ## 🛠️ Technology Stack
