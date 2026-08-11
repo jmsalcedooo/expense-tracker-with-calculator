@@ -13,6 +13,7 @@ import { useTheme } from "@/context/ThemeContext"
 import { createHomeStyles } from "@/assets/styles/home.styles"
 import { THEMES } from "@/constants/colors"
 import React from "react"
+import { FlatList, Image, Text, TouchableOpacity, View, Alert, RefreshControl, Platform } from "react-native"
 
 export default function Page() {
   const { user } = useUser()
@@ -39,10 +40,19 @@ export default function Page() {
   // }, [loadData]);
 
   const handleDelete = (id) => {
-    Alert.alert("Delete Transaction", "Are you sure you want to delete this transaction?", [ 
-      { text: "Cancel", style: "cancel" },
-      { text: "Delete", style: "destructive", onPress: () => deleteTransaction(id)},
-    ]);
+    if (Platform.OS === 'web') {
+      // Browser-safe confirmation for Vercel
+      const confirmDelete = window.confirm("Are you sure you want to delete this transaction?");
+      if (confirmDelete) {
+        deleteTransaction(id);
+      }
+    } else {
+      // Native confirmation for mobile/Expo Go
+      Alert.alert("Delete Transaction", "Are you sure you want to delete this transaction?", [ 
+        { text: "Cancel", style: "cancel" },
+        { text: "Delete", style: "destructive", onPress: () => deleteTransaction(id)},
+      ]);
+    }
   };
 
   if(isLoading && !refreshing) return <PageLoader />
