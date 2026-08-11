@@ -43,6 +43,15 @@ app.get("/api/health", (req, res) => {
 
 app.use("/api/transactions", transactionsRoute);
 
+// Global JSON Error Handler
+app.use((err, req, res, next) => {
+    console.error("🔥🔥🔥 GLOBAL ERROR:", err);
+    res.status(500).json({ 
+        success: false, 
+        message: err.message || "Internal Server Error" 
+    });
+});
+
 initDB().then(() => {
     app.listen(PORT,() =>{
         console.log("Server is up and running on PORT:", PORT);
