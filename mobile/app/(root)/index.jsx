@@ -3,17 +3,17 @@ import { Link, useRouter, useFocusEffect } from "expo-router"
 import { FlatList, Image, Text, TouchableOpacity, View, Alert, RefreshControl } from "react-native"
 import { SignOutButton } from "@/components/SignOutButton"
 import { useEffect, useState } from "react"
-import { useTransactions } from "../../hooks/useTransactions"
-import PageLoader from "../../components/PageLoader"
-//import { styles } from "../../assets/styles/home.styles"
+import { useTransactions } from "@/hooks/useTransactions"
+import PageLoader from "@/components/PageLoader"
+//import { styles } from "@/assets/styles/home.styles"
 import { Ionicons } from "@expo/vector-icons"
-import { BalanceCard } from "../../components/BalanceCard"
-import { TransactionItem } from "../../components/TransactionItem"
-import { NoTransactionsFound } from "../../components/NoTransactionsFound"
-//import { COLORS } from "../../constants/colors"
-import { useTheme } from "../../context/ThemeContext";
-import { createHomeStyles } from "../../assets/styles/home.styles"
-import { THEMES } from "../../constants/colors";
+import { BalanceCard } from "@/components/BalanceCard"
+import { TransactionItem } from "@/components/TransactionItem"
+import { NoTransactionsFound } from "@/components/NoTransactionsFound"
+//import { COLORS } from "@/constants/colors"
+import { useTheme } from "@/context/ThemeContext";
+import { createHomeStyles } from "@/assets/styles/home.styles"
+import { THEMES } from "@/constants/colors";
 import React from "react";
 
 export default function Page() {
