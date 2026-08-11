@@ -25,7 +25,7 @@ if (process.env.NODE_ENV === "production") job.start();
 app.use(cors());
 
 // middleware
-app.use(rateLimiter);
+// app.use(rateLimiter);
 app.use(express.json());
 
 // our custom middleware
