@@ -1,6 +1,6 @@
 import { SignedIn, SignedOut, useUser } from "@clerk/clerk-expo"
 import { Link, useRouter, useFocusEffect } from "expo-router"
-import { FlatList, Image, Text, TouchableOpacity, View, Alert, RefreshControl } from "react-native"
+import { FlatList, Image, Text, TouchableOpacity, View, Alert, RefreshControl, Platform } from "react-native"
 import { SignOutButton } from "@/components/SignOutButton"
 import { useEffect, useState } from "react"
 import { useTransactions } from "@/hooks/useTransactions"
@@ -13,7 +13,6 @@ import { useTheme } from "@/context/ThemeContext"
 import { createHomeStyles } from "@/assets/styles/home.styles"
 import { THEMES } from "@/constants/colors"
 import React from "react"
-import { FlatList, Image, Text, TouchableOpacity, View, Alert, RefreshControl, Platform } from "react-native"
 
 export default function Page() {
   const { user } = useUser()
