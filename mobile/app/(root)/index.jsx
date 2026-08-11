@@ -5,16 +5,14 @@ import { SignOutButton } from "@/components/SignOutButton"
 import { useEffect, useState } from "react"
 import { useTransactions } from "@/hooks/useTransactions"
 import PageLoader from "@/components/PageLoader"
-//import { styles } from "@/assets/styles/home.styles"
 import { Ionicons } from "@expo/vector-icons"
 import { BalanceCard } from "@/components/BalanceCard"
 import { TransactionItem } from "@/components/TransactionItem"
 import { NoTransactionsFound } from "@/components/NoTransactionsFound"
-//import { COLORS } from "@/constants/colors"
-import { useTheme } from "@/context/ThemeContext";
+import { useTheme } from "@/context/ThemeContext"
 import { createHomeStyles } from "@/assets/styles/home.styles"
-import { THEMES } from "@/constants/colors";
-import React from "react";
+import { THEMES } from "@/constants/colors"
+import React from "react"
 
 export default function Page() {
   const { user } = useUser()
