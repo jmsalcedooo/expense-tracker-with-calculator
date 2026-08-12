@@ -45,7 +45,7 @@ This project is built using React.js (React Native) and SQL, simulating a cross-
 
 ## 🚀 Getting Started (Local Development)
 
-To run this project locally on your machine and test it on your phone via Expo Go:
+You can run this online from the website provided in the repository or you can try to this project locally on your machine and test it on your phone via Expo Go:
 
 ### Prerequisites
 * Node.js installed
