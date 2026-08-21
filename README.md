@@ -3,7 +3,7 @@
 A comprehensive Mobile Application & Development Final Project designed to help users seamlessly track their financial transactions while offering built-in calculator functionality. 
 
 This project is built using React.js (React Native) and SQL, simulating a cross-platform mobile environment using **Expo Go** to ensure smooth functionality across both Android and iOS devices.
-
+ 
 ### 📱 App Screenshots
 
 <table>
